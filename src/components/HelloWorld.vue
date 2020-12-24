@@ -3,7 +3,6 @@
     <div id="intro">
       <h2>國立清華大學</h2>
       <h1>藝術學院學士班</h1>
-      <button id="button1" type="button">Learn more</button>
       <div class="context">
         <p id=introduction>
           清華大學2018年成立藝術學院〝科技藝術〞跨域「學士班」，結合創新科技，<br>
@@ -11,6 +10,7 @@
           把「科技」與「藝術」結合視為「未來文化學」，培養前瞻性、跨域研究與創作人才。
         </p>
       </div>
+      <button id="button1" type="button" value="Learn" onclick="javascript:location.href='/learn_intro#/learn_intro'">Learn more</button>
     </div>
     <div id="announce">
       <div id="anno1">
@@ -18,28 +18,29 @@
         <p align="left">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, <br>
           sed quia consequuntur magni dolores eos qui ratione voluptatem sequi <br>
           nesciunt. Neque porro quisquam est.</p>
-        <button id="button2" type="button">Learn more</button>
+        <button id="button2" type="button" value="learn" onclick="javascript:location.href='/learn#/learn'">Learn more</button>
       </div>
       <div id="anno2">
         <h4> 2020春之清華 – 藝術卓越獎 科技藝術類 得獎名單</h4>
         <p align="left">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>
           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>
           ullamco laboris nisi.</p>
-        <button id="button3" type="button">Learn more</button>
+        <button id="button3" type="button" onclick="javascript:location.href='/learn#/learn'">Learn more</button>
       </div>
       <div id="anno3">
         <h4> 2020藝術學院學士班春之清華獎學金 獲獎名單</h4>
         <p align="left">Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br>
           Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, <br>
           consectetur, adipisci velit, sed quia non numquam.</p>
-        <button id="button4" type="button">Learn more</button>
+        <button id="button4" type="button" onclick="javascript:location.href='/learn#/learn'">]
+        Learn more</button>
       </div>
       <div id="anno4">
         <h4> 徵聘『助理教授級以上』專任教師1名</h4>
         <p align="left">Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui <br>
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non <br>
           numquam eius modi tempora.</p>
-        <button id="button5" type="button">Learn more</button>
+        <button id="button5" type="button" onclick="javascript:location.href='/learn#/learn'">Learn more</button>
       </div>
     </div>
   </div>
@@ -64,6 +65,7 @@ h1{ /*藝術學院學士班*/
   /* text-align: left;
   padding: 5px 0px 0px 165px; */
   margin:0 0 0 0;
+  z-index:2;
 }
 h2{
   font-size: 2em;
@@ -75,9 +77,20 @@ h2{
 }
 #introduction{
   text-align: center;
-  padding: 30px 0px 0px 0px;
+  padding: 90px 0px 0px 0px;
   margin:0 0 0 0;
+  font-weight: normal;
 }
+
+#button1{
+  width:165px;
+  height:49px;
+  font-size:18px;
+  font-weight:bold;
+  border-radius:8px;
+  margin:107px 0 0 0;
+}
+
 button{
   width:125px;
   height:40px;
@@ -89,20 +102,7 @@ button{
   border:2px blue none;
   margin:30px 0 0 0;
 }
-#button1{
-  width:165px;
-  height:49px;
-  font-size:18px;
-  font-weight:bold;
-  border-radius:8px;
-  color: #d4ddfa;
-  background-color:#2b46a7;
-  /* background-color: #42b983; */
-  border:2px blue none;
-  position:relative;
-  top:290px;left:0px;
-  float:center;
-}
+
 
 #announce{
   text-align:left;
@@ -111,22 +111,22 @@ button{
 }
 #anno1{
   position:relative;
-  top:582px;left:0px;
+  top:432px;left:0px;
 }
 
 #anno2{
   position:relative;
-  top:378px;left:700px;
+  top:228px;left:700px;
 }
 
 #anno3{
   position:relative;
-  top:510px;left:0px;
+  top:360px;left:0px;
 }
 
 #anno4{
   position:relative;
-  top:306px;left:700px;
+  top:156px;left:700px;
 }
 
 h5 {

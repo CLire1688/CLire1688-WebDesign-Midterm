@@ -51,41 +51,48 @@
 }
 
 #nav {
-  padding: 25px; 
+  padding: 35px; 
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgba(240, 248, 255, 0.849);
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #nav a {
   font-weight:normal;
   color: #f9faf9;
   text-decoration: none; /*去除預設樣式底線底線*/
+  font-weight: bold;
 }
 
 #nav a.router-link-exact-active {
   color:#597BF2;
   text-decoration: none; /*去除預設樣式底線*/
+  font-weight: bolder;
 }
 
 
 #footer {
-  padding: 50px; 
+  padding: 35px; 
   background-color: rgb(0, 0, 0);
   color: aliceblue;
   border-top-style:solid;
   border-width:0.005px;
   border-color: rgb(116, 115, 115);
   text-decoration: none;
+  font-size: 12px;
 }
 
 #footer a {
   font-weight:normal;
   color: #f9faf9;
   text-decoration: none; /*去除預設樣式底線*/
+  font-weight: bold;
 }
 
 #footer a.router-link-exact-active {
   color:#597BF2;
   text-decoration: none; /*去除預設樣式底線*/
+  font-weight: bolder;
 }
 </style>
